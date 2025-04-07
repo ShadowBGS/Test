@@ -1,9 +1,9 @@
 const API_BASE_URL = "https://localhost:44354/api/userlogin";
 
 // Redirect to login if not logged in
-if (!sessionStorage.getItem("isLoggedIn")) {
-  window.location.href = "StudentLogin.html";
-}
+// if (!sessionStorage.getItem("isLoggedIn")) {
+//   window.location.href = "StudentLogin.html";
+// }
 
 // Function to handle user login
 // async function login(userId, password, role) {
@@ -37,7 +37,7 @@ if (!sessionStorage.getItem("isLoggedIn")) {
 function logoutAPI() {
   sessionStorage.removeItem("userId");
   sessionStorage.removeItem("isLoggedIn");
-  window.location.href = "StudentLogin.html";
+  // window.location.href = "StudentLogin.html";
 }
 
 async function logout() {
@@ -67,7 +67,7 @@ function logoutAPIs() {
   sessionStorage.removeItem("userId");
   sessionStorage.removeItem("isLoggedIn");
   alert("Logging Out");
-  window.location.href = "StudentLogin.html";
+  // window.location.href = "StudentLogin.html";
 }
 // Function to check session status
 async function checkSession() {
