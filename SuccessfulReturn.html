@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Borrow Books</title>
+    <title>Successful Borrow</title>
     <link rel="icon" type="image/x-icon" href="Logo/Frame (1).svg" />
-    <link rel="stylesheet" href="Borrow.css" />
     <link rel="stylesheet" href="Navigation.css" />
+    <link rel="stylesheet" href="Result.css" />
   </head>
   <body>
     <nav>
@@ -116,25 +116,12 @@
       </div>
     </nav>
     <main>
-      <article>
-        <header>Borrow from our wide range of books</header>
-        <h5>Serial Number</h5>
-        <input
-          id="serialnumber"
-          type="text"
-          placeholder="Enter Book Seial Number"
-        />
-        <h4>
-          NOTE: The Serial number can be found on the bottom right corner at the
-          back
-        </h4>
-        <div>
-          <button id="Enter">Enter</button>
-        </div>
-      </article>
+      <h1>You have successfully returned this book</h1>
+      <button onclick="window.location.href='Dashboard.html'">
+        Go to Dashboard
+      </button>
     </main>
-    <h1 id="error_message">BOOK NOT FOUND</h1>
-    <script src="Borrow.js"></script>
+
     <script src="Navigation.js"></script>
   </body>
 </html>

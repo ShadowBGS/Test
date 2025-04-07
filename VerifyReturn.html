@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Borrow Books</title>
+    <title>Verify Return</title>
     <link rel="icon" type="image/x-icon" href="Logo/Frame (1).svg" />
-    <link rel="stylesheet" href="Borrow.css" />
+    <link rel="stylesheet" href="Verify.css" />
     <link rel="stylesheet" href="Navigation.css" />
   </head>
   <body>
@@ -116,25 +116,18 @@
       </div>
     </nav>
     <main>
-      <article>
-        <header>Borrow from our wide range of books</header>
-        <h5>Serial Number</h5>
-        <input
-          id="serialnumber"
-          type="text"
-          placeholder="Enter Book Seial Number"
-        />
-        <h4>
-          NOTE: The Serial number can be found on the bottom right corner at the
-          back
-        </h4>
-        <div>
-          <button id="Enter">Enter</button>
-        </div>
-      </article>
+      <h2>Please meet the ADMIN to verify the code below</h2>
+      <h1 id="returncode">378801</h1>
+      <h3>do you wish to continue?</h3>
+      <div>
+        <button onclick="window.location.href='RequestReturn.html'">
+          Go Back
+        </button>
+        <button id="Continue">Continue</button>
+      </div>
     </main>
-    <h1 id="error_message">BOOK NOT FOUND</h1>
-    <script src="Borrow.js"></script>
+
     <script src="Navigation.js"></script>
+    <script src="VerifyReturn.js"></script>
   </body>
 </html>
